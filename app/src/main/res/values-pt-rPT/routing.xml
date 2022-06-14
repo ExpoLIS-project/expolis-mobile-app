@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="routing_profile_move_mode">trajecto</string>
+    <string-array name="routing_profile_mode">
+        <item>pé</item>
+        <item>bicicleta</item>
+        <item>carro</item>
+    </string-array>
+    <string name="routing_profile_state_avoid_pollution">evitar poluição</string>
+    <string name="routing_profile_state_ignore_pollution">ignorar poluição</string>
+</resources>

@@ -1,0 +1,24 @@
+<resources>
+    <declare-styleable name="OnlineDataPlotView">
+        <attr name="CO" format="integer" />
+        <attr name="NO2" format="integer" />
+        <attr name="PM1" format="integer" />
+        <attr name="PM2_5" format="integer" />
+        <attr name="PM10" format="integer" />
+
+        <attr name="plots_x_tic_label_text_size" format="dimension" />
+        <attr name="plots_y_axis_title_text_size" format="dimension" />
+        <attr name="plots_annotations_text_size" format="dimension" />
+
+        <attr name="gap_margin_left_y_axis_label" format="integer" />
+        <attr name="gap_y_axis_label_plot_bar" format="integer" />
+        <attr name="gap_plot_bars" format="integer" />
+        <attr name="gap_plot_bar_margin_right" format="integer" />
+        <attr name="gap_plots" format="integer" />
+
+        <attr name="gap_plot_aqi_plot_annotation" format="integer" />
+        <attr name="gap_plot_annotation_plot_bar" format="integer" />
+        <attr name="gap_x_axis_x_tic_icon" format="integer" />
+        <attr name="gap_x_tic_icon_x_tic_label" format="integer" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,2 @@
+rootProject.name='Expolis Mobile App'
+include ':app'

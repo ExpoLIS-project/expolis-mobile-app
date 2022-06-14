@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">ExpoLIS Mobile App</string>
+    <string name="version_number">versão 1.0</string>
+    <string name="welcome_expolis">Bem-vindo à ExpoLIS Mobile App</string>
+    <string name="wsf_expolis_sensor_database">base de dados</string>
+    <string name="wsf_expolis_mqtt_broker">dados tempo real</string>
+    <string name="wsf_expolis_route_planner">planeador rotas</string>
+    <string name="no_internet_connection">A app ExpoLIS requer uma ligação à internet para poder funcionar!</string>
+    <string name="connecting_postgres">Estabelecendo ligação ao servidor ExpoLIS…</string>
+    <string name="connection_postgres_failed">Falhou a ligação a %1$s o servidor da base de dados ExpoLIS!</string>
+    <string name="connected_postgres">Ligado ao servidor ExpoLIS…</string>
+    <string name="connecting_mqtt_broker">Estabelecendo ligação ao gestor de mensagens MQTT ExpoLIS…</string>
+    <string name="connection_mqtt_broker_failed">Falhou a ligaçao a %1$s o gestor de mensagens MQTT ExpoLIS!</string>
+    <string name="connected_mqtt_broker">Ligado ao gestor de mensagens MQTT ExpoLIS…</string>
+    <string name="checking_route_planner">A verificar o planeador de rotas ExpoLIS…</string>
+    <string name="connection_route_planner_failed">O planeador de rotas ExpoLIS não está disponível!</string>
+    <string name="advice_turn_on_internet">Por favor ligue os dados móveis ou o wi-fi.</string>
+    <string name="advice_expolis_database_downtime">O servidor da base de dados ExpoLIS deve estar em manutenção.\n\nExperimente voltar mais tarde.</string>
+    <string name="advice_expolis_mqtt_downtime">O gestor de mensagens MQTT ExpoLIS deve estar em manutenção.\n\nExperimente voltar mais tarde.</string>
+    <string name="advice_route_planner_offline">O planeador de rotas ExpoLIS está indisponível provavelmente para actualizar os dados de planeamento.\n\nPode utilizar a app, mas o planeador estará indisponível por um determinado período de tempo.</string>
+    <plurals name="advice_offline_servers">
+        <item quantity="one" tools:ignore="ImpliedQuantity">Um dos servidores ExpoLIS não está disponível devido a manutenção e actualizações.\nA funcionalidade respectiva estará desactivada.</item>
+        <item quantity="other">Alguns dos servidores ExpoLIS não estão disponíveis devido a manutenção e actualizações.\nAs funcionalidades respectivas estarão desactivadas.</item>
+    </plurals>
+    <string name="advice_all_servers_offline">Nenhum dos servidores ExpoLIS está disponível devido a manutenção e actualizações.\nAs funcionalidades respectivas estarão desactivadas.</string>
+    <string name="welcome_proceed">Continuar</string>
+    <string name="welcome_skip">Saltar</string>
+    <plurals name="steps_to_admin">
+        <item quantity="one">Falta %1$d passo para ir para o ecran de admnistrador.</item>
+        <item quantity="other">Faltam %1$d passos para ir para o ecran de admnistrador.</item>
+    </plurals>
+    <string name="expolis_logo">Logotipo ExpoLIS</string>
+    <string name="of_data">de</string>
+    <string name="show_statistics">mostrar</string>
+    <string name="querying_database">Consultando base de dados…</string>
+    <string name="view_plot">mostrar</string>
+    <string name="search_no_results">Pesquisa sem resultados</string>
+    <string name="cell_data_vs_time_title">Dados numa região</string>
+    <string name="cell_resolution">resolução (m)</string>
+    <string name="fetching_measurement_bus_lines">Requisitando carreiras de autocarros…</string>
+    <string name="fetching_sensor_nodes">Requisitando caixas de sensores…</string>
+    <string name="fetching_measurement_timestamps">Requisitando data e hora das medições…</string>
+    <string name="saving_bus_lines">Gravando caixas de sensores…</string>
+    <string name="loading_bus_lines">Carregando caixas de sensores…</string>
+    <string name="using_default_bus_lines">Utilizando caixas de sensores por omissão!</string>
+    <string name="cell_data_chart">Gráfico Localização Geográfica</string>
+    <string name="temperature_measured_by_sensor_node">temperatura medida pelo sensor</string>
+    <string name="humidity_measured_by_sensor_node">humidade medida pelo sensor</string>
+    <string name="timestamp_of_last_measurement">hora da última leitura do sensor</string>
+    <string name="selected_sensor_node">sensor selecionado</string>
+    <string name="show_planner">mostrar planeador</string>
+    <string name="select_bus">selecionar autocarro</string>
+    <string name="show_tutorial">mostrar tutorial</string>
+    <string name="overall_air_quality_index">índice da qualidade do ar</string>
+    <string name="air_quality_index_1_very_good">índice da qualidade do ar é boa</string>
+    <string name="air_quality_index_2_medium">índice da qualidade do ar é média</string>
+    <string name="air_quality_index_3_bad">índice da qualidade do ar é má</string>
+    <string name="select_bus_number">Selecione o autocarro</string>
+    <string name="cell_data_chart_vertical_axis_title">%1$s de %2$s (%3$s)</string>
+    <string name="data_co">CO</string>
+    <string name="data_no2">NO2</string>
+    <string name="data_pm1" tools:ignore="Typos">PM1</string>
+    <string name="data_pm2_5">PM2.5</string>
+    <string name="data_pm10">PM10</string>
+    <string name="data_temperature">temperatura</string>
+    <string name="data_pressure">pressão</string>
+    <string name="data_humidity">humidade</string>
+    <string name="data_number_particles">número de partículas</string>
+    <string name="data_particle_diameter">diametro partícula</string>
+    <string name="data_ldsa">LDSA</string>
+    <string name="statistics_average">média</string>
+    <string name="statistics_maximum">máximo</string>
+    <string name="statistics_minimum">mínimo</string>
+
+    <!-- select date range -->
+    <string name="date_from">a partir de</string>
+    <string name="date_to">até</string>
+    <string name="date_range">período de visualização</string>
+    <string name="tap_to_select_from_date">toque para editar data inicial</string>
+    <string name="tap_to_select_to_date">toque para editar data final</string>
+
+    <!-- planner fragment -->
+    <string name="view_plan">Ver</string>
+
+    <!-- edit plot properties fragments -->
+
+    <string name="what">utilizar</string>
+    <string name="using_data">utilizar</string>
+    <string-array name="what_data">
+        <item>leituras sensores</item>
+        <item>dados processados</item>
+    </string-array>
+    <string name="interpolated_data">dados interpolados</string>
+    <string name="raw_data">dados em bruto</string>
+    <string name="location_focus">apresentar</string>
+    <string-array name="locations">
+        <item>todos os locais</item>
+        <item>carreira de autocarro</item>
+    </string-array>
+    <string name="focus_all_locations">todos os locais</string>
+    <string name="focus_bus_line">carreira de autocarro</string>
+
+    <string name="info_map_plot_overview">Escolha que dados quer visualizar e que filtros deseja aplicar</string>
+    <string name="info_map_plot_what_data">
+        Pode escolher entre utilizar os dados em bruto ou dados interpolados.
+        \n\n
+        Com os dados em bruto pode especificar
+        como várias leituras na mesma posição da grelha são agregadas,
+        se quer focar nos dados recolhidos junto a uma carreira de autocarro ou não,
+        o tamanho das posições da grelha (em metros).
+        \n\n
+        Os dados interpolados consistem em mapas pré calculados que cobrem a região de Lisboa.
+        São utilizados todos dados recolhidos pelos sensores para estimar um valor.
+        Estes mapas são calculados a cada hora.
+    </string>
+    <string name="info_map_plot_show_statistic">Esta propriedade permite-lhe escolher o que é apresentado no mapa se\n\nno caso de dados em bruto, existe mais do que uma leitura por posição da grelha; no caso de dados interpolados, existe mais do que um valor no período especificado (por posição da grelha).\n\nPode escolher a média, o máximo ou o mínimo.</string>
+    <string name="info_map_plot_focus">
+        Pode escolher entre apresentar os dados em todas as localizações recolhidas pela rede de sensores
+        ou focar-se só nos dados perto de uma determinada carreira de autocarro.
+    </string>
+    <string name="info_map_plot_cell_size">Quando escolhe ver todas as localizações, este campo especifica o tamanho de cada posição da grelha.\n\nQuando se foca numa carreira de autocarro, este campo especifica a distância máxima das leituras consideradas.\n\nAs unidades são metros.
+    </string>
+
+    <!-- edit chart plot properties fragment -->
+
+    <string name="area_to_analyse">área a analisar</string>
+
+    <string name="info_chart_plot_overview">Escolha que dado sensorial pretende ver, que localização quer analisar e que filtro temporal quer aplicar</string>
+    <string name="info_chart_plot_show_statistic">
+        Neste gráfico pode ver um evolutivo dos dados recolhidos pela rede de sensores do projecto
+        ExpoLIS.
+        As dados são agregados hora a hora.
+        \n\n
+        Esta propriedade permite-lhe especificar o que é apresentado a cada hora: a média, o máximo
+        ou o mínimo.
+    </string>
+
+    <string name="info_chart_plot_location">
+        Arraste o círculo vermelho para especificar a localização da região a apresentar no gráfico.
+        Afaste ou aproxime o mapa para aumentar ou diminuir o tamanho da região circular.
+    </string>
+
+    <!-- view map plot fragment -->
+
+    <string name="map_plot_title"> </string>
+    <string name="map_plot_properties_raw_data">• %1$s de %2$s em cada posição da grelha\n• de %4$s a %5$s\n• tamanho de cada posição da grelha é %3$.1f metros\n• dados em bruto recolhidos pelos sensores</string>
+    <string name="map_plot_properties_line_data">• %1$s de %2$s em cada posição da grelha\n• de %5$s a %6$s\n• dados na carreira %3$s\n• só foram considerados dados recolhidos no máximo até  %4$d metros da carreira\n• dados em bruto recolhidos pelos sensores</string>
+    <string name="map_plot_properties_interpolated_data">• %1$s de %2$s em cada posição da grelha\n• de %4$s a %5$s\n• tamanho de cada posição da grelha é %3$d metros\n• dados interpolados</string>
+
+    <!-- view char plot fragment -->
+
+    <string name="chart_plot_properties">• %1$s de %2$s\n• local %3$s, %4$s\n• num raio %5$d metros\n• de %6$s a %7$s</string>
+
+    <!-- tutorial fragment -->
+
+    <string name="Previous">Anterior</string>
+    <string name="Next">Próximo</string>
+    <string name="tutorial_image_description">Captura de écran</string>
+    <string name="tutorial_title">Tutorial</string>
+    <string name="tutorial_page">%1$d de %2$d</string>
+    <string name="tutorial_online_data_overview">Bem-vindo à aplicação móvel ExpoLIS. Este é o écran principal onde você pode ver dados recolhidos em tempo real por um dos sensores instalados nos autocarros da Carris.</string>
+    <string name="tutorial_online_data_time_bus">Na área em cima à esquerda você pode ver a hora a que foi medida os últimos dados de poluição. Também pode ver o número de autocarro cuja poluição está a ser apresentada.</string>
+    <string name="tutorial_online_data_button_select_bus">
+        Pode tocar no botão em baixo à direita para escolher o autocarro para o qual quer ver a
+        poluição em tempo real.
+    </string>
+    <string name="tutorial_online_data_pms">O gráfico do lado direito mostra a quantidade de material particulado de tamanho 1 mícron, 2,5 mícrons e 10 mícrons.</string>
+    <string name="tutorial_online_data_gases">O gráfico do lado esquerdo mostra a quantidade de dióxido de nitrogénio e monóxido de carbono.</string>
+    <string name="tutorial_online_data_temperature_humidity">A área em cima à esquerda apresenta a temperatura e humidade.</string>
+    <string name="tutorial_online_data_overall_state">
+        A face grande no topo ao centro apresenta a qualidade geral do ar.
+    </string>
+    <string name="tutorial_edit_plot_raw_data_map">
+        O primeiro gráfico (a contar de cima) é um gráfico com os dados em bruto.
+        Neste gráfico pode selecionar que dado visualizar, como é que os dados são agregados
+        (média, máximo, mínimo), intervalo temporal e uma resolução.
+    </string>
+    <string name="tutorial_view_plot_raw_data_map">
+        Os dados são apresentados numa grelha num mapa.
+        A resolução controla o tamanho de cada posição da grelha.
+        As unidades da resolução são metros.
+        Se existe mais do que uma leitura dos sensores no intervalo temporal para cada posição da
+        grelha, então elas são agregadas segundo a função de agregação.
+    </string>
+    <string name="tutorial_edit_plot_location_data_chart">
+        O segundo gráfico é a poluição numa dada região.
+        Neste gráfico pode controlar a localização da região arrastando o círculo vermelho.
+        Pode também controlar o tamanho da região ampliando ou reduzindo o mapa.
+        Qualquer leitura dos sensores dentro da região será agregada segundo a função de agregação.
+        Aqui também pode especificar um intervalo temporal para filtar leituras dos sensores.
+    </string>
+    <string name="tutorial_view_plot_location_data_chart">
+        A poluição é apresentado num gráfico de linha com o tempo no eixo horizontal e a poluição
+        no eixo vertical.
+    </string>
+    <string name="tutorial_edit_plot_interpolated_data_map">
+        O terceiro gráfico é um mapa com os dados interpolados.
+        Neste gráfico pode selecionar que dado visualizar e um intervalo temporal para filtrar os
+        dados.
+        \n\n
+        Os dados recolhidos pela rede de sensores são usados para criar uma estimativa da poluição
+        numa região pré-determinada.
+        Esta estimativa resulta da interpolação dos dados.
+    </string>
+    <string name="tutorial_view_plot_interpolated_data_map">
+        A interpolação é apresentada sob a forma de uma grelha.
+        Se existe mais do que uma interpolação para o intervalo temporal escolhido, é apresentado a
+        média dos valores da interpolação.
+    </string>
+    <string name="tutorial_edit_plot_line_data_chart_map">
+        O último gráfico é um mapa com a poluição ao longo de um precurso de um autocarro.
+        Neste gráfico pode especificar com é que os dados são agregados, um intervalo temporal, o
+        percurso e uma distância.
+        \n\n
+        Para cada percurso que um autocarro pode fazer, existe uma sequência de posições.
+        Para cada posição são agregadas as leituras que estão a menos de x metros da distância
+        especificada.
+    </string>
+    <string name="tutorial_view_plot_line_data_chart_map">
+        Os dados são apresentados num mapa e num gráfico de linha (quando apropriado).
+        O eixo horizontal do gráfico de linha é a distância no percurso (a partir do ponto de
+        partida).
+        O eixo vertical é a poluição.
+    </string>
+    <string name="tutorial_online_data_button_map_plot">
+        Toque no botão mais à esquerda para poder escolher que dados visualizar no mapa.
+    </string>
+    <string name="tutorial_online_data_button_chart_plot">
+        Toque no segundo botão à esquerda para escolher que dados visualizar num evolutivo temporal.
+    </string>
+    <string name="tutorial_online_data_button_planner">
+        Toque no botão do meio para ir para o planeador de rotas saudáveis.
+    </string>
+    <string name="tutorial_map_plot_edit">
+        Neste écran pode escolher que dados visualizar no mapa.  Pode escolher dados agregados ou interpolados, o período de visualização, se quer focar-se numa carreira de autocarros ou não.
+    </string>
+    <string name="tutorial_map_plot_view">
+        Este écran mostra os dados da poluição num mapa.  A legenda utiliza as cores utilizadas no índice da qualidade do ar.
+    </string>
+    <string name="tutorial_chart_plot_edit">
+        Neste écran pode escolher que dados visualizar num evolutivo temporal.  Pode escolher se quer ver a média, máximo ou mínimo, e o período de visualização.
+    </string>
+    <string name="tutorial_chart_plot_view">
+        Este écran mostra os dados da poluição num evolutivo temporal.
+    </string>
+    <string name="tutorial_route_planner">
+        Neste écran pode planear uma rota. Pode escolher diferente meios de transporte e se pretende evitar poluição ou não.
+    </string>
+    <string name="fetching_online_data_map_layers">Requisitando dados sensoriais agregados mais recentes…</string>
+
+    <!-- admin activity -->
+    <string name="expolis_sensor_database">Base de dados ExpoLIS</string>
+    <string name="expolis_mqtt_broker">Gestor MQTT ExpoLIS</string>
+    <string name="expolis_route_planner">Planeador rotas ExpoLIS</string>
+    <string name="retry_expolis_mobile_app">Connectar</string>
+    <string name="enter_the_expolis_sensor_database_host_name">Introduza o nome da base de dados ExpoLIS</string>
+    <string name="enter_the_expolis_sensor_database_port_number">Introduza o porto da base de dados ExpoLIS</string>
+    <string name="enter_the_expolis_mqtt_broker_host_name">Introduza o nome do gestor MQTT ExpoLIS</string>
+    <string name="enter_the_expolis_mqtt_broker_port_number">Introduza o porto do gestor MQTT ExpoLIS</string>
+    <string name="enter_server_host_name">Introduza o nome do servidor</string>
+    <string name="enter_server_port_number">Introduza a porta do servidor</string>
+    <string name="sensor_node_box">Caixa de Sensores</string>
+
+    <!-- region database cache -->
+    <string name="default_sensor_box_i">Caixa de Sensores %1$d</string>
+    <!-- endregion -->
+
+</resources>

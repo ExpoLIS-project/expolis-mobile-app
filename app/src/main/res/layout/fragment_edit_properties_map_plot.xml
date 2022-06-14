@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".plots.map.EditMapPlotPropertiesFragment"
+    tools:ignore="ContentDescription">
+
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/info_map_plot_overview"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout2"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/showTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:labelFor="@id/statistics_spinner"
+            android:text="@string/show_statistics"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/statistics_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/showTextView"
+            app:layout_constraintStart_toEndOf="@id/showTextView"
+            app:layout_constraintTop_toTopOf="@id/showTextView" />
+
+        <ImageButton
+            android:id="@+id/infoShowButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_od_info"
+            app:layout_constraintBottom_toBottomOf="@id/statistics_spinner"
+            app:layout_constraintStart_toEndOf="@id/statistics_spinner"
+            app:layout_constraintTop_toTopOf="@id/statistics_spinner" />
+
+        <TextView
+            android:id="@+id/dataTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:labelFor="@id/data_spinner"
+            android:text="@string/of_data"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/showTextView" />
+
+        <Spinner
+            android:id="@+id/data_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/dataTextView"
+            app:layout_constraintStart_toEndOf="@id/dataTextView"
+            app:layout_constraintTop_toTopOf="@id/dataTextView" />
+
+        <TextView
+            android:id="@+id/fromDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/date_from"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dataTextView" />
+
+        <EditText
+            android:id="@+id/fromDateEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:ems="10"
+            android:hint="@string/tap_to_select_from_date"
+            android:importantForAutofill="no"
+            android:inputType="none"
+            android:textAlignment="viewStart"
+            app:layout_constraintBottom_toBottomOf="@id/fromDateTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/fromDateTextView"
+            app:layout_constraintTop_toTopOf="@id/fromDateTextView"
+            tools:ignore="TextFields,Deprecated" />
+
+        <TextView
+            android:id="@+id/toDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/date_to"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fromDateTextView" />
+
+        <EditText
+            android:id="@+id/toDateEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/tap_to_select_to_date"
+            android:importantForAutofill="no"
+            android:inputType="none"
+            android:textAlignment="viewStart"
+            app:layout_constraintBottom_toBottomOf="@id/toDateTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/toDateTextView"
+            app:layout_constraintTop_toTopOf="@id/toDateTextView"
+            tools:ignore="TextFields" />
+
+        <TextView
+            android:id="@+id/whatTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/using_data"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toDateTextView" />
+
+        <Spinner
+            android:id="@+id/what_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/what_data"
+            app:layout_constraintBottom_toBottomOf="@id/whatTextView"
+            app:layout_constraintStart_toEndOf="@id/whatTextView"
+            app:layout_constraintTop_toTopOf="@id/whatTextView" />
+
+        <ImageButton
+            android:id="@+id/infoWhatDataButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_od_info"
+            app:layout_constraintBottom_toBottomOf="@id/what_spinner"
+            app:layout_constraintStart_toEndOf="@id/what_spinner"
+            app:layout_constraintTop_toTopOf="@id/what_spinner" />
+
+        <TextView
+            android:id="@+id/focusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/location_focus"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/whatTextView" />
+
+        <Spinner
+            android:id="@+id/focus_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/locations"
+            app:layout_constraintBottom_toBottomOf="@id/focusTextView"
+            app:layout_constraintStart_toEndOf="@+id/focusTextView"
+            app:layout_constraintTop_toTopOf="@id/focusTextView" />
+
+        <Spinner
+            android:id="@+id/line_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            app:layout_constraintStart_toStartOf="@+id/focus_spinner"
+            app:layout_constraintTop_toBottomOf="@+id/focus_spinner" />
+
+        <ImageButton
+            android:id="@+id/infoFocusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_od_info"
+            app:layout_constraintBottom_toBottomOf="@id/focus_spinner"
+            app:layout_constraintStart_toEndOf="@+id/focus_spinner"
+            app:layout_constraintTop_toTopOf="@id/focus_spinner" />
+
+        <TextView
+            android:id="@+id/cellSizeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:labelFor="@id/cellSizeEditText"
+            android:text="@string/cell_resolution"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line_spinner" />
+
+        <EditText
+            android:id="@+id/cellSizeEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints="N"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="@id/cellSizeTextView"
+            app:layout_constraintStart_toEndOf="@id/cellSizeTextView"
+            app:layout_constraintTop_toTopOf="@id/cellSizeTextView" />
+
+        <ImageButton
+            android:id="@+id/infoCellSizeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_od_info"
+            app:layout_constraintBottom_toBottomOf="@id/cellSizeEditText"
+            app:layout_constraintStart_toEndOf="@id/cellSizeEditText"
+            app:layout_constraintTop_toTopOf="@id/cellSizeEditText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <Button
+        android:id="@+id/viewPlotButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/view_plot"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

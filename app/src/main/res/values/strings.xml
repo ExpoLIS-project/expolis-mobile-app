@@ -1,0 +1,306 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">ExpoLIS Mobile App</string>
+
+    <!-- region welcome screen fragment -->
+    <string name="welcome_expolis">Welcome to ExpoLIS Mobile App</string>
+    <string name="wsf_expolis_sensor_database">database</string>
+    <string name="wsf_expolis_mqtt_broker">real time data</string>
+    <string name="wsf_expolis_route_planner">route planner</string>
+    <string name="no_internet_connection">ExpoLIS Mobile App requires an active internet connection to work!</string>
+    <string name="connecting_postgres">Connecting to ExpoLIS database server…</string>
+    <string name="connection_postgres_failed">Connection to ExpoLIS database server %1$s failed!</string>
+    <string name="connected_postgres">Connected to ExpoLIS database server.</string>
+    <string name="connecting_mqtt_broker">Connecting to ExpoLIS MQTT broker…</string>
+    <string name="connection_mqtt_broker_failed">Connection to ExpoLIS MQTT broker %1$s failed!</string>
+    <string name="connected_mqtt_broker">Connected to ExpoLIS MQTT broker.</string>
+    <string name="fetching_measurement_bus_lines">Fetching bus lines…</string>
+    <string name="fetching_sensor_nodes">Fetching sensor nodes…</string>
+    <string name="fetching_measurement_timestamps">Fetching measurement timestamps…</string>
+    <string name="fetching_online_data_map_layers">Fetching latest overview sensor…</string>
+    <string name="saving_bus_lines">Saving sensor nodes…</string>
+    <string name="loading_bus_lines">Loading sensor nodes…</string>
+    <string name="using_default_bus_lines">Using default sensor nodes!</string>
+    <string name="checking_route_planner">Checking availability of ExpoLIS route planner…</string>
+    <string name="connection_route_planner_failed">ExpoLIS route planner is offline!</string>
+    <string name="advice_turn_on_internet">Please enable the mobile data or turn on the wifi</string>
+    <string name="advice_expolis_database_downtime">The ExpoLIS database server may be down for maintenance work.\n\nPlease try again later.</string>
+    <string name="advice_expolis_mqtt_downtime">The ExpoLIS MQTT broker may be down for maintenance work.\n\nPlease try again later.</string>
+    <string name="advice_route_planner_offline">ExpoLIS route planner is offline probably to update its data.\n\nYou can use the app, but the planning feature will not be available for a while.</string>
+    <plurals name="advice_offline_servers">
+        <item quantity="one">One of the ExpoLIS servers is offline due to maintenance work and scheduled updates.\nIts corresponding functionality will be disabled.</item>
+        <item quantity="other">Some ExpoLIS servers are offline due to maintenance work and scheduled updates.\nTheir corresponding functionalities will be disabled.</item>
+    </plurals>
+    <string name="advice_all_servers_offline">All ExpoLIS servers are offline due to maintenance work and scheduled updates.\nAll their corresponding functionalities will be disabled.</string>
+    <string name="welcome_proceed">Proceed</string>
+    <string name="welcome_skip">Skip</string>
+    <plurals name="steps_to_admin">
+        <item quantity="one">You are at %1$d step to show the admin screen.</item>
+        <item quantity="other">You are at %1$d steps to show the admin screen.</item>
+    </plurals>
+    <!-- endregion -->
+    <!-- admin activity -->
+    <string name="expolis_sensor_database">ExpoLIS sensor database</string>
+    <string name="expolis_mqtt_broker">ExpoLIS MQTT broker</string>
+    <string name="expolis_route_planner">ExpoLIS route planner</string>
+    <string name="retry_expolis_mobile_app">Retry</string>
+    <string name="enter_server_host_name">Enter the server host name</string>
+    <string name="enter_server_port_number">Enter the server port number</string>
+    <string name="enter_the_expolis_sensor_database_port_number">Enter the ExpoLIS sensor database port number</string>
+    <string name="enter_the_expolis_sensor_database_host_name">Enter the ExpoLIS sensor database host name</string>
+    <string name="enter_the_expolis_mqtt_broker_host_name">Enter the ExpoLIS MQTT broker host name</string>
+    <string name="enter_the_expolis_mqtt_broker_port_number">Enter the ExpoLIS MQTT broker port number</string>
+    <string name="sensor_node_box">Sensor Node Box</string>
+
+    <!-- content description -->
+    <string name="expolis_logo">ExpoLIS logo</string>
+    <!-- select data fragment -->
+    <string name="of_data">of</string>
+
+    <!-- select statistics fragment -->
+    <string name="show_statistics">show</string>
+
+    <!-- select date range -->
+    <string name="date_from">from</string>
+    <string name="date_to">to</string>
+    <string name="date_range">date range</string>
+    <string name="tap_to_select_from_date">tap to edit start date</string>
+    <string name="tap_to_select_to_date">tap to edit end date</string>
+
+    <!-- querying database -->
+    <string name="querying_database">Querying database…</string>
+
+    <string name="view_plot">view</string>
+    <!--    <string name="size">size</string>-->
+    <string name="cell_data_vs_time_title">sensor data versus time</string>
+    <string name="search_no_results">Search returned no results</string>
+    <string name="cell_resolution">resolution (m)</string>
+    <!--    <string name="bus_line">line</string>-->
+    <string name="cell_data_chart">Location Data Chart</string>
+
+    <string name="cell_data_chart_vertical_axis_title">%1$s of %2$s (%3$s)</string>
+
+    <!-- edit plot properties fragments -->
+
+    <string name="what">what</string>
+    <string name="using_data">using</string>
+    <string-array name="what_data">
+        <item>sensor data</item>
+        <item>processed data</item>
+    </string-array>
+    <string name="interpolated_data">interpolated data</string>
+    <string name="raw_data">raw data</string>
+    <string name="location_focus">focus</string>
+    <string-array name="locations">
+        <item>all locations</item>
+        <item>bus line</item>
+    </string-array>
+    <string name="focus_all_locations">all locations</string>
+    <string name="focus_bus_line">bus line</string>
+
+    <!-- edit map plot properties fragment -->
+
+    <string name="info_map_plot_overview">Select what sensor data you want to see and which filters you want to apply</string>
+    <string name="info_map_plot_what_data">
+        Select either raw sensor readings or interpolated data.
+        \n\nSelecting raw sensor readings enables:
+        \n• how several readings in the same grid cell are aggregated;
+        \n• whether to focus on data collected next to a bus line or not;
+        \n• the grid size (in meters).
+        \n\nThe interpolated data are pre computed maps that use all sensor readings
+        to compute a map that covers the region of Lisbon.
+        These maps are computed on a hourly basis.
+    </string>
+
+    <string name="info_map_plot_show_statistic">
+        This property allows to select what is shown in the map plot if
+        \n• in the case of raw data, more than one sensor reading exists per grid cell;
+        \n• in the case of interpolated data, more than one value exists during the time period (per grid cell).
+        \n\nPossible options are: the average, maximum or minimum.
+    </string>
+
+    <string name="info_map_plot_focus">
+        Select between viewing the data collected at every location,
+        or to just focus on the data collected near by a bus line.
+    </string>
+
+    <string name="info_map_plot_cell_size">
+        When data collected at every location is selected, a grid is computed.
+        In this text field the grid cell size can be specified.
+        \n\nIf instead, focus on a bus line is selected,
+        then this field is used to specify how far we go (from the bus line)
+        when considering the data collected by the network sensors.
+        \n\nUnits are meters.
+    </string>
+
+    <!-- edit chart plot properties fragment -->
+
+    <string name="info_chart_plot_overview">Select which sensor data you want to see, which location you want to analyse and the date range filter to apply</string>
+    <string name="info_chart_plot_show_statistic">
+        This plot shows the temporal evolution of data collected by the ExpoLIS sensor network.
+        The data is hourly aggregated.
+        \n\nThis property allow to specify how the data is aggregated: compute the average, take the
+        maximum or the minimum.
+    </string>
+
+    <string name="info_chart_plot_location">
+        Drag the red circle to specify the location of the circular region to show on the plot.
+        Zoom in and zoom out to decrease or increase the size of the circular region.
+    </string>
+
+    <string name="area_to_analyse">area to analyse</string>
+
+    <!-- view map plot fragment -->
+
+    <string name="map_plot_title"> </string>
+    <string name="map_plot_properties_raw_data">• %1$s of %2$s for each square cell and time period\n• square length is %3$.1f meters\n• from %4$s to %5$s\n• sensor raw data</string>
+    <string name="map_plot_properties_line_data">• %1$s of %2$s for each square cell and time period\n• data shown only for bus line %3$s\n• only considered data collected at most %4$d meters from the bus line\n• from %5$s to %6$s\n• sensor raw data</string>
+    <string name="map_plot_properties_interpolated_data">• %1$s of %2$s for each square cell and time period\n• square length is %3$d meters\n• from %4$s to %5$s\n• interpolated data</string>
+
+    <!-- view char plot fragment -->
+    <string name="chart_plot_properties">• %1$s of %2$s\n• location %3$s, %4$s\n• in a radius of %5$d meters\n• from %6$s to %7$s</string>
+
+    <!-- online data fragment -->
+    <string name="temperature_measured_by_sensor_node">temperature measured by sensor node</string>
+    <string name="humidity_measured_by_sensor_node">humidity measured by sensor node</string>
+    <string name="timestamp_of_last_measurement">timestamp of last measurement</string>
+    <string name="selected_sensor_node">selected sensor node</string>
+    <string name="overall_air_quality_index">overall air quality index</string>
+    <string name="select_bus">select bus</string>
+    <string name="show_planner">Show planner</string>
+    <string name="show_tutorial">show tutorial</string>
+
+    <string name="air_quality_index_1_very_good">air quality index is very good</string>
+    <string name="air_quality_index_2_medium">air quality index is medium</string>
+    <string name="air_quality_index_3_bad">air quality index is bad</string>
+
+    <string name="select_bus_number">Select bus number</string>
+
+    <!-- planner fragment -->
+    <string name="view_plan">View</string>
+
+    <!-- sensor data -->
+    <string name="data_co">CO</string>
+    <string name="data_no2">NO2</string>
+    <string name="data_pm1" tools:ignore="Typos">PM1</string>
+    <string name="data_pm2_5">PM2.5</string>
+    <string name="data_pm10">PM10</string>
+    <string name="data_temperature">temperature</string>
+    <string name="data_pressure">pressure</string>
+    <string name="data_humidity">humidity</string>
+    <string name="data_number_particles">number of particles</string>
+    <string name="data_particle_diameter">particle diameter</string>
+    <string name="data_ldsa">LDSA</string>
+
+    <!-- statistics -->
+    <string name="statistics_average">average</string>
+    <string name="statistics_maximum">maximum</string>
+    <string name="statistics_minimum">minimum</string>
+
+    <!-- tutorial fragment -->
+    <string name="Previous">Previous</string>
+    <string name="Next">Next</string>
+    <string name="tutorial_title">Tutorial</string>
+    <string name="tutorial_page">%1$d of %2$d</string>
+    <string name="tutorial_image_description">App screenshot</string>
+    <string name="tutorial_online_data_overview">
+        Welcome to the ExpoLIS mobile app.
+        This is the main screen where you can see real time pollution data collected by the sensors
+        in the Carris buses.
+    </string>
+    <string name="tutorial_online_data_time_bus">
+        In the top right area you can see the time when the last pollution data was recorded.
+        We can also see the bus number whose pollution data is being shown.
+    </string>
+    <string name="tutorial_online_data_button_select_bus">
+        Tap the button on the bottom right to select which bus to display real time pollution data.
+    </string>
+    <string name="tutorial_online_data_pms">
+        The plot on the right shows the quantity of particulate matter with sizes 1, 2.5 and 10
+        microns.
+    </string>
+    <string name="tutorial_online_data_gases">
+        The plot on the left shows the quantity of nitrogen dioxide and carbon monoxide.
+    </string>
+    <string name="tutorial_online_data_temperature_humidity">
+        The area on the top left shows the temperature and humidity.
+    </string>
+    <string name="tutorial_online_data_overall_state">
+        The large icon on the top center shows the overall air quality.
+    </string>
+    <string name="tutorial_online_data_button_map_plot">
+        Tapping the leftmost button on the bottom goes to the screen where you can edit the properties of the map plot.
+    </string>
+    <string name="tutorial_online_data_button_chart_plot">
+        Tapping the second button from the left on the bottom goes to the screen where you can edit the properties of the chart plot.
+    </string>
+    <string name="tutorial_online_data_button_planner">
+        Tapping the middle button on the bottom goes to the planner screen.
+    </string>
+    <string name="tutorial_map_plot_edit">
+        In this screen you can select which sensor data to visualise in a map.  You can select how to aggregate the data, the time period, and if you want to focus in a particular bus line.
+    </string>
+    <string name="tutorial_map_plot_view">
+        This screen shows a map of sensor data.  In the bottom there is a short description of what you selected to plot.
+    </string>
+    <string name="tutorial_chart_plot_edit">
+        In this screen you can select which sensor data to visualise in a given region.  You can select how to aggregate the data and the time period.
+    </string>
+    <string name="tutorial_chart_plot_view">
+        This screen shows sensor data in a given location.  In the bottom there is a short description of what you selected to plot.
+    </string>
+    <string name="tutorial_route_planner">
+        In this screen you can plan a route using different means of transportation and if you want to avoid polluted areas or not.
+    </string>
+    <string name="tutorial_edit_plot_raw_data_map">
+        The first plot (starting from top) gives access to the raw data map.
+        In this plot you can select which pollution data to analyse, how the sensor data is
+        aggregated, date interval, and a resolution.
+    </string>
+    <string name="tutorial_view_plot_raw_data_map">
+        The pollution is shown as a grid on a map.
+        The size of each grid cell is given by the resolution (units are meters).
+        If more than one sensor reading exists for any given grid cell, then one of the aggregation
+        function is used (average, maximum or minimum).
+    </string>
+    <string name="tutorial_edit_plot_location_data_chart">
+        The second plot gives access to the location chart.
+        In this plot you can select a location on the map: drag the red circle in the map.
+        You can also enlarge or decrease the circle: zoom out or zoom in the map.
+        Any sensor reading within the circle will be aggregated.
+        Again you can select a date interval to filter out sensor readings.
+    </string>
+    <string name="tutorial_view_plot_location_data_chart">
+        The pollution is shown as chart with time on the horizontal axis, and pollution value on
+        the vertical axis.
+    </string>
+    <string name="tutorial_edit_plot_interpolated_data_map">
+        The third plot is the interpolated data map.
+        In this plot you can select which pollution data to view and a date interval.
+        \n\n
+        The data collected by the sensor network is used to build a prediction of what the pollution
+        is in a pre-determined region.
+        The prediction is computed using an interpolation method.
+    </string>
+    <string name="tutorial_view_plot_interpolated_data_map">
+        This interpolation is presented a grid.
+        If for each grid cell there is more than one interpolated value,
+        we present the average.
+    </string>
+    <string name="tutorial_edit_plot_line_data_chart_map">
+        The last plot is the line data chart and map.
+        In this plot you can also which pollution data to see, how data is aggregated, a date
+        interval, the line and a distance.
+        \n\n
+        For each line a bus can take, we have a set of locations.
+        For each location we aggregate the sensor data within the specified distance and date
+        interval.
+    </string>
+    <string name="tutorial_view_plot_line_data_chart_map">
+        The resulting data is presented in a map and a chart (if applicable).
+        The horizontal axis in the chart data is distance from the line starting position, while the
+        vertical axis contains the pollution data.
+    </string>
+    <!-- region database cache -->
+    <string name="default_sensor_box_i">Sensor Box %1$d</string>
+    <!-- endregion -->
+</resources>

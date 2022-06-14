@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="routing_profile_move_mode">trip</string>
+    <string-array name="routing_profile_mode">
+        <item>foot</item>
+        <item>bicycle</item>
+        <item>car</item>
+    </string-array>
+    <string name="routing_profile_state_avoid_pollution">avoid pollution</string>
+    <string name="routing_profile_state_ignore_pollution">ignore pollution</string>
+</resources>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="false"
+    tools:context=".online.OnlineDataFragment">
+
+    <ImageButton
+        android:id="@+id/editPlotMapPropertiesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/show_tutorial"
+        android:src="@drawable/ic_od_plot_map"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editPlotChartPropertiesButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/editPlotChartPropertiesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/show_tutorial"
+        android:src="@drawable/ic_od_plot_chart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/showPlannerButton"
+        app:layout_constraintStart_toEndOf="@+id/editPlotMapPropertiesButton" />
+
+    <ImageButton
+        android:id="@+id/showPlannerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/show_planner"
+        android:src="@drawable/ic_od_planner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/selectBusButton"
+        app:layout_constraintStart_toEndOf="@+id/editPlotChartPropertiesButton" />
+
+    <ImageButton
+        android:id="@+id/selectBusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/select_bus"
+        android:src="@drawable/ic_od_select_bus_carris"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tutorButton"
+        app:layout_constraintStart_toEndOf="@+id/showPlannerButton" />
+
+    <ImageButton
+        android:id="@+id/tutorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/show_tutorial"
+        android:src="@drawable/ic_od_tutorial"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/selectBusButton" />
+
+    <ImageView
+        android:id="@+id/overallStateImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/overall_air_quality_index"
+        android:src="@drawable/ic_od_overall_state_1_good"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/temperatureHumidityTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/overallStateImageView"
+        app:layout_constraintEnd_toStartOf="@+id/overallStateImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/overallStateImageView">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="6dp">
+
+            <TextView
+                android:id="@+id/temperaturePlainText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/temperature_measured_by_sensor_node"
+                android:drawablePadding="8dp"
+                android:ems="7"
+                android:gravity="center_vertical|end"
+                android:paddingHorizontal="8dp"
+                android:textAlignment="textEnd"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:drawableStartCompat="@drawable/ic_od_temperature" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="6dp">
+
+            <TextView
+                android:id="@+id/humidityPlainText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/humidity_measured_by_sensor_node"
+                android:drawablePadding="8dp"
+                android:ems="7"
+                android:gravity="center_vertical|end"
+                android:paddingHorizontal="8dp"
+                android:textAlignment="textEnd"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:drawableStartCompat="@drawable/ic_od_humidity" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/timestampSensorNodeTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/overallStateImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/overallStateImageView"
+        app:layout_constraintTop_toTopOf="@+id/overallStateImageView">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="6dp">
+
+            <TextView
+                android:id="@+id/timestampLastMeasurementPlainText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/timestamp_of_last_measurement"
+                android:drawablePadding="8dp"
+                android:ems="7"
+                android:gravity="center_vertical|end"
+                android:paddingHorizontal="8dp"
+                android:textAlignment="textEnd"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:drawableEndCompat="@drawable/ic_od_timestamp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="6dp">
+
+            <TextView
+                android:id="@+id/selectedSensorNodeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/selected_sensor_node"
+                android:drawablePadding="8dp"
+                android:ems="7"
+                android:gravity="center_vertical|end"
+                android:paddingHorizontal="8dp"
+                android:textAlignment="textEnd"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:drawableEndCompat="@drawable/ic_od_sensor_node" />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+    <pt.expolis.mobileapp.online.OnlineDataPlotView
+        android:id="@+id/onlineDataPlotView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:paddingHorizontal="4dp"
+        android:paddingVertical="4dp"
+        app:CO="70"
+        app:NO2="60"
+        app:PM1="20"
+        app:PM10="25"
+        app:PM2_5="30"
+        app:gap_plots="32"
+        app:layout_constraintBottom_toTopOf="@+id/onlineMapView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/overallStateImageView" />
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/onlineMapView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/onlineDataPlotView">
+    </org.osmdroid.views.MapView>
+
+    <TextView
+        android:id="@+id/unhandledMQTTMessageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/onlineMapView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/tutorButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription">
+
+        <ImageButton
+            android:id="@+id/showCORadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_od_background_layers"
+            android:src="@drawable/ic_od_layer_gas_co_off" />
+
+        <ImageButton
+            android:id="@+id/showNO2RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="2dp"
+            android:background="@drawable/ic_od_background_layers"
+            android:src="@drawable/ic_od_layer_gas_no2_off" />
+
+        <ImageButton
+            android:id="@+id/showPM1RadioButton"
+            android:background="@drawable/ic_od_background_layers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="2dp"
+            android:src="@drawable/ic_od_pm1" />
+
+        <ImageButton
+            android:id="@+id/showPM25RadioButton"
+            android:background="@drawable/ic_od_background_layers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="2dp"
+            android:src="@drawable/ic_od_pm2_5" />
+
+        <ImageButton
+            android:id="@+id/showPM10RadioButton"
+            android:background="@drawable/ic_od_background_layers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="2dp"
+            android:src="@drawable/ic_od_pm10" />
+
+        <ImageButton
+            android:id="@+id/followBusImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_od_follow_bus" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
