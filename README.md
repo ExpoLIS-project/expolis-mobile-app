@@ -4,11 +4,11 @@ Mobile application developed during the ExpoLIS project that allows citizens to 
 
 If you use this software please cite the following publication:
 
+> Pedro Santana, Alexandre Almeida, Pedro Mariano, Carolina Correia, Vânia Martins, Susana Marta Almeida. (2021). [Air quality mapping and visualisation: An affordable solution based on a vehicle-mounted sensor network](https://www.sciencedirect.com/science/article/pii/S0959652621024124). _Journal of Cleaner Production_, 315:128194.
+
+For complementary information see the following publication:
+
 Pedro Mariano, Susana Marta Almeida, Alexandre Almeida, Carolina Correia, Vânia Martins, José Moura, Tomás Brandão e Pedro Santana. "An Information System for Air Quality Monitoring using Mobile Sensor Networks". In: _Proceedings of the 19th International Conference on Informatics in Control, Automation and Robotics_. INSTICC. SciTePress.
-
-For more information about the ExpoLIS project see the following publication:
-
-Pedro Santana, Alexandre Almeida, Pedro Mariano, Carolina Correia, Vânia Martins, Susana Marta Almeida. (2021). Air quality mapping and visualisation: An affordable solution based on a vehicle-mounted sensor network. _Journal of Cleaner Production_, 315:128194.
 
     @InProceedings{Mariano2022a,
        author =       {Pedro Mariano and Susana Marta Almeida and
